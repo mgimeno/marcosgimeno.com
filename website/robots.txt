@@ -1,0 +1,3 @@
+Sitemap: https://www.marcosgimeno.com/sitemap.xml
+User-agent: *
+Disallow:
