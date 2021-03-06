@@ -84,8 +84,39 @@
       display:flex;
     }
 
-    a{
+    .social-media a{
       margin: 0 5px;
+      position: relative;
+    }
+
+    .social-media img{
+      transition: transform .4s;
+    }
+
+    .social-media a:hover img{
+      transform: scale(1.25);
+    }
+
+    .social-media .tooltip{
+      padding:4px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      background-color: #fff;
+      position: absolute;
+      top: 85px;
+      left: -3px;
+      width:70px;
+      text-align: center;
+      transition: transform 1s;
+      border-radius: 5px;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity .4s linear;
+    }
+
+    .social-media a:hover .tooltip{
+      visibility: visible;
+      opacity: 1;
     }
 
     
@@ -99,15 +130,27 @@
   <div class="social-media">
     <a href="https://www.linkedin.com/in/marcosgimeno" target="_blank" rel="noreferrer">
       <img src="images/linkedin.png" width="64" height="64" alt="LinkedIn">
+      <div class="tooltip">
+        LinkedIn
+      </div>
     </a>
     <a href="https://github.com/mgimeno" target="_blank" rel="noreferrer">
       <img src="images/github.png" width="64" height="64" alt="Github">
+      <div class="tooltip">
+        Github
+      </div>
     </a>
     <a href="https://www.facebook.com/marcos.gimenoandres" target="_blank" rel="noreferrer">
       <img src="images/facebook.png" width="64" height="64" alt="Facebook">
+      <div class="tooltip">
+        Facebook
+      </div>
     </a>
     <a href="https://www.instagram.com/marco_polonorte" target="_blank" rel="noreferrer">
       <img src="images/instagram.png" width="64" height="64" alt="Instagram">
+      <div class="tooltip">
+        Instagram
+      </div>
     </a>
   </div>
 </div>
